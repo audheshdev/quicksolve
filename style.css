@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#6366f1;--dark:#111827;--muted:#6b7280;--bg:#f8fafc;--white:#fff;--border:#e5e7eb}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+.container{width:min(1120px,92%);margin:auto}
+.header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:10}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{text-decoration:none;color:var(--dark);font-weight:800;font-size:1.25rem}
+nav{display:flex;gap:20px}
+nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.hero{text-align:center;padding:80px 0 60px}
+.badge{display:inline-block;background:#eef2ff;color:#4f46e5;padding:8px 14px;border-radius:999px;font-size:.9rem;font-weight:700}
+h1{font-size:clamp(2rem,6vw,4rem);line-height:1.1;margin:20px auto;max-width:850px}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto 28px}
+.btn,button{background:var(--primary);color:white;border:none;border-radius:10px;padding:13px 20px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;transition:.2s}
+.btn:hover,button:hover{transform:translateY(-2px);filter:brightness(.96)}
+.tools{padding:30px 0 80px}
+.tools>h2,.about h2{text-align:center;font-size:2rem;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 8px 25px rgba(0,0,0,.04)}
+.icon{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.3rem;margin-bottom:6px}
+.card p{color:var(--muted);margin-bottom:18px}
+label{display:block;font-size:.9rem;font-weight:700;margin:12px 0 6px}
+input{width:100%;padding:12px;border:1px solid var(--border);border-radius:9px;font-size:1rem;outline:none}
+input:focus{border-color:var(--primary)}
+button{width:100%;margin-top:16px}
+.result{margin-top:16px;padding:13px;background:#f1f5f9;border-radius:9px;font-weight:600;min-height:50px}
+.about{background:#eef2ff;padding:60px 0;text-align:center}
+.about p{max-width:700px;margin:auto;color:#4b5563}
+footer{background:#111827;color:#d1d5db;text-align:center;padding:24px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.hero{padding:60px 0 45px}nav{gap:12px}.card{padding:20px}}

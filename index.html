@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QuickSolve - Free daily calculators. No signup, no API.">
+  <title>QuickSolve | Free Daily Calculators</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">⚡ QuickSolve</a>
+      <nav>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <span class="badge">100% Free • No Signup • Works Offline</span>
+      <h1>Simple Tools That Solve Daily Problems</h1>
+      <p>Calculate age, percentages, date differences and BMI instantly.</p>
+      <a class="btn" href="#tools">Try Free Tools ↓</a>
+    </section>
+
+    <section id="tools" class="container tools">
+      <h2>Choose a Tool</h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="icon">🎂</div>
+          <h3>Age Calculator</h3>
+          <p>Find your exact age from your date of birth.</p>
+          <label>Date of Birth</label>
+          <input type="date" id="birthDate">
+          <button onclick="calculateAge()">Calculate Age</button>
+          <div class="result" id="ageResult">Enter your date of birth.</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">📊</div>
+          <h3>Percentage Calculator</h3>
+          <p>Find what percentage one number is of another.</p>
+          <label>Part Number</label>
+          <input type="number" id="part" placeholder="Example: 25">
+          <label>Total Number</label>
+          <input type="number" id="total" placeholder="Example: 100">
+          <button onclick="calculatePercentage()">Calculate %</button>
+          <div class="result" id="percentageResult">Enter both numbers.</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">📅</div>
+          <h3>Days Between Dates</h3>
+          <p>Calculate the number of days between two dates.</p>
+          <label>Start Date</label>
+          <input type="date" id="startDate">
+          <label>End Date</label>
+          <input type="date" id="endDate">
+          <button onclick="calculateDays()">Calculate Days</button>
+          <div class="result" id="daysResult">Choose two dates.</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">⚖️</div>
+          <h3>BMI Calculator</h3>
+          <p>Calculate your Body Mass Index from height and weight.</p>
+          <label>Weight (kg)</label>
+          <input type="number" id="weight" placeholder="Example: 65" step="0.1">
+          <label>Height (cm)</label>
+          <input type="number" id="height" placeholder="Example: 170" step="0.1">
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <div class="result" id="bmiResult">Enter weight and height.</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About QuickSolve</h2>
+        <p>QuickSolve is a lightweight collection of useful everyday calculators. Your data stays in your browser — nothing is sent to a server.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 QuickSolve • Made for quick everyday calculations ⚡</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
